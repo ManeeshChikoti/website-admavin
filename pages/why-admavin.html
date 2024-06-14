@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../themes/libs/bootstrap/bootstrap.min.css"
+    />
+    <script
+      type="text/javascript"
+      href="../../scripts/libs/bootstrap/bootstrap.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="../scripts/why-admavin/why-admavin-functions.js"
+    ></script>
+    <link rel="stylesheet" href="../../themes/style.css" />
+  </head>
+  <body>
+    <div class="why-admavin-section page-content bg-primary text-white">
+      <h1 class="text-center mb-3">
+        Why Choose <span class="text-secondary">ADMAVIN ?</span>
+      </h1>
+
+      <div class="row why-admavin-content" style="height: 500px">
+        <div class="col-sm-12 col-md-7">
+          <div class="d-flex h-100 w-100 spacing">
+            <div class="bg-secondary w-2"></div>
+            <div
+              class="d-flex flex-column h-100 w-100 justify-content-between"
+              id="messageDiv"
+            >
+              <h1 id="messageHeading" class="py-3 ps-5"></h1>
+              <p id="messageText" class="text-justify ps-5 fs-2"></p>
+              <div class="d-fex flex-wrap ps-5">
+                <button
+                  class="showMsgButton mt-2"
+                  onclick="showMessage(this, 1)"
+                >
+                  1
+                </button>
+                <button
+                  class="showMsgButton mt-2"
+                  onclick="showMessage(this,2)"
+                >
+                  2
+                </button>
+                <button
+                  class="showMsgButton mt-2"
+                  onclick="showMessage(this,3)"
+                >
+                  3
+                </button>
+                <button
+                  class="showMsgButton mt-2"
+                  onclick="showMessage(this,4)"
+                >
+                  4
+                </button>
+                <button
+                  class="showMsgButton mt-2"
+                  onclick="showMessage(this,5)"
+                >
+                  5
+                </button>
+                <button
+                  class="showMsgButton mt-2"
+                  onclick="showMessage(this,6)"
+                >
+                  6
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 d-none d-md-block">
+          <image
+            src="../assets/why-admavin.png"
+            class="mw-100 why-admavin-image"
+          />
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        showMessage(document.querySelector(".showMsgButton"), 1);
+      });
+    </script>
+  </body>
+</html>

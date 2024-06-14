@@ -1,0 +1,175 @@
+:root {
+  --bs-primary: black;
+  --bs-primary-rgb: 0, 0, 0;
+  --bs-secondary: #00c09b;
+  --bs-secondary-rgb: 0, 192, 155;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.page-content {
+  padding: 50px;
+  height: 100vh;
+  overflow: auto;
+}
+
+.heatmap-image {
+  width: 100%;
+  height: 400px;
+}
+
+.image-analysis {
+  max-height: 400px;
+  max-width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.bordered-text {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.opacity-70 {
+  opacity: 0.7;
+}
+
+.new-casestudy-images {
+  height: 600px;
+  width: 100%;
+}
+
+.remove-bg {
+  mix-blend-mode: color-dodge;
+}
+
+.img-cont {
+  background-color: transparent;
+  position: relative;
+}
+
+.img-cont img {
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+
+.img-fluid {
+  min-height: 300px;
+}
+
+.news-image {
+  max-height: 400px;
+  max-width: 100%;
+}
+
+.why-admavin-section {
+  height: 100vh;
+  overflow: auto;
+}
+
+.showMsgButton {
+  border: 4px solid gray;
+  padding: 7px 15px;
+  margin-left: 20px;
+}
+
+.w-2 {
+  width: 2%;
+  height: 100%;
+}
+
+.spacing {
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.why-admavin-content {
+  height: 500px;
+}
+
+.why-admavin-image {
+  height: 600px;
+}
+
+.team-image1 {
+  height: 400px;
+}
+
+.team-image2 {
+  height: 193px;
+}
+
+.our-team-section {
+  width: 50%;
+}
+
+.our-team-font {
+  font-size: 28px;
+}
+
+.steps12-image {
+  height: 200px;
+}
+
+.text-truncate-2 {
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* For WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: lightgray;
+}
+
+/* For Mozilla Firefox */
+::-moz-scrollbar {
+  width: 1px;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: lightgray;
+}
+
+@media only screen and (max-width: 500px) {
+  .new-casestudy-images,
+  .heatmap-image {
+    height: 250px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .our-team-section {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+  .our-team-font {
+    font-size: 20px;
+  }
+
+  .team-image1 {
+    height: 300px;
+  }
+
+  .team-image2 {
+    height: 193px;
+  }
+}
+
+@media screen and (min-width: 1170px) and (max-width: 1500px) {
+  .our-team-font {
+    font-size: 24px;
+  }
+}
