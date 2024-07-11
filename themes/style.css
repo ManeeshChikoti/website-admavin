@@ -1,3 +1,9 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
 :root {
   --bs-primary: black;
   --bs-primary-rgb: 0, 0, 0;
@@ -5,12 +11,8 @@
   --bs-secondary-rgb: 0, 192, 155;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
+
+
 
 .page-content {
   padding: 50px;
@@ -173,3 +175,83 @@ body {
     font-size: 24px;
   }
 }
+
+/* Common Style */
+.bg-color {
+  background-color: #000a08;
+}
+
+.schedule-btn {
+  padding: 5px 20px;
+  border: 2px solid #0db59b;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #0db59b;
+  font-size: 18px;
+}
+
+.text-color {
+  color: #0db59b;
+}
+
+
+
+
+
+/* Navbar Style */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin: 0px 20px;
+  font-weight: 300;
+}
+
+.schedule-btn {
+  padding: 10px 40px;
+  border: 2px solid #0db59b;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #0db59b;
+  font-size: 18px;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+
+
+
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+/* Small devices (landscape phones, 576px and down) */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .navbar {
+    padding: 20px 50px;
+  }
+  
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar {
+    min-height: 100px;
+    padding: 30px 50px;
+  }
+  
+  
+}
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .navbar {
+    padding: 30px 150px;
+  }
+ 
+}/*# sourceMappingURL=style.css.map */
