@@ -14,6 +14,7 @@ function showMessage(clickedButton, number) {
       messageHeading.innerText = "TRUSTED DATA SOURCES";
       messageText.innerText =
         "Get - “Up to Date” location specific data and analytics for more than 700 cities and towns across India, including real time Traffic, Demographics and Population spread data.";
+        
       break;
 
     case 2:
@@ -65,7 +66,10 @@ function showMessage(clickedButton, number) {
   ctx.fillText(number.toString(), canvas.width / 2, canvas.height / 2);
 
   // Set chosen number as background image text
-  messageDiv.style.backgroundImage = "url('" + canvas.toDataURL() + "')";
+
+  const imgData = ["", "", ""]; 
+ 
+  messageDiv.style.backgroundImage = `<img src="${imgData[number-1]}"/>`;
   messageDiv.style.backgroundRepeat = "no-repeat";
   messageDiv.style.backgroundSize = "cover";
   messageDiv.style.backgroundPosition = "center";

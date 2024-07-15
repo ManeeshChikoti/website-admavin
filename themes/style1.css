@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,6 @@
 .card-img-top{
   height:250px;
 }
-
 
 
 .page-content {
@@ -178,27 +176,48 @@
   }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 /* Common Style */
 .bg-color {
   background-color: #000a08;
 }
 
-.schedule-btn {
-  padding: 5px 20px;
-  border: 2px solid #0db59b;
-  border-radius: 10px;
-  background-color: transparent;
-  color: #0db59b;
-  font-size: 18px;
+.planner-bg {
+  background-color: #161616;
 }
 
 .text-color {
   color: #0db59b;
 }
 
+.card-title {
+  font-size: 25px;
+}
 
+.mobile-btn {
+  padding: 10px 40px;
+  border: 3px solid white;
+  border-radius: 8px;
+  background-color: transparent !important;
+  color: white;
+}
 
-
+.title {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 5px;
+}
 
 /* Navbar Style */
 nav ul li a {
@@ -294,19 +313,24 @@ nav ul li a {
   width: 100px;
 }
 
-
-
-
 /* X-Small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 /* Small devices (landscape phones, 576px and down) */
-
+@media (max-width: 576px) {
+  #home-section {
+    margin-top: 50px;
+    padding: 30px;
+  }
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .navbar {
     padding: 20px 50px;
   }
-  
+  #home-section {
+    margin-top: 90px;
+    padding: 30px;
+  }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -314,16 +338,41 @@ nav ul li a {
     min-height: 100px;
     padding: 30px 50px;
   }
-  
-  
+  #home-section {
+    margin-top: 110px;
+    padding: 50px;
+  }
+  #planner-section {
+    padding: 50px;
+  }
 }
-
-
+/* Large devices (desktops, 992px and down) */
+@media (max-width: 992px) {
+  #home-section {
+    background-image: none !important;
+  }
+  .home-map {
+    height: 300px !important;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .home-inner,
+  .home-map {
+    height: 100% !important;
+  }
+  #home-section {
+    height: 600px;
+  }
+}
 /* X-Large devices (large desktops, 1200px and up) */
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
   .navbar {
     padding: 30px 150px;
   }
- 
+  #home-section,
+  #planner-section {
+    padding: 50px 150px !important;
+  }
 }/*# sourceMappingURL=style.css.map */

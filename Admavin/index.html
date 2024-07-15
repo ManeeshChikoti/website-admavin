@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADMAVIN</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- Inter and Kanit Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- Style -->
+  <link rel="stylesheet" href="style1.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+
+  <header id="navbar-section">
+    <nav class="navbar navbar-dark navbar-expand-xl fixed-top bg-color">
+      <div class="container-fluid">
+        <a href="#navbar-section" class="navbar-brand">
+          <img src="../../assets/images/admavin_logo.png" alt="Admavin Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul
+            class="navbar-nav me-auto mb-2 text-center mb-lg-0 w-100 d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-column flex-xl-row justify-content-xl-center flex-grow-1">
+              <li class="nav-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Case Studies</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Teams</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Contact</a>
+              </li>
+            </div>
+            <button class="schedule-btn d-none d-lg-block">Schedule Demo</button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home-section">
+    <div class="row text-white home-inner">
+      <div class="col-lg-6 col-xl-5 d-flex flex-column justify-content-between pb-5">
+        <div class="d-flex flex-column gap-lg-5">
+          <p class="title text-center text-lg-start">
+            AI Driven Solution <br />
+            For <span>OOH</span> Advertising
+          </p>
+          <p class="home-subtitle text-center text-lg-start">
+            Generate Analysis Report For Billboards <br />Absolutely Free
+          </p>
+        </div>
+        <div class="d-flex gap-3 mt-3 mt-lg-0 justify-content-center justify-content-lg-start">
+          <button class="schedule-btn d-block d-lg-none">Schedule Demo</button>
+          <button class="mobile-btn d-none d-lg-block">Sample Report</button>
+          <button class="mobile-btn d-none d-lg-block">View Tutorial</button>
+        </div>
+      </div>
+      <div class="col-lg-6 col-xl-7 p-0 p-lg-3 d-lg-flex flex-lg-column">
+        <div class="home-map"></div>
+        <div class="w-100 d-block d-lg-none mt-5 d-flex justify-content-center">
+          <button class="mobile-btn">Sample Report</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scrolling Section -->
+  <section id="scrolling-section" class="py-4">
+    <p class="text-center">Loved And Trusted By Over <span class="text-color">100+</span> Company Leaders</p>
+    <!-- <div class="marquee">
+        <div class="track">
+          <div class="content">
+            &nbsp; Admavin webpage Admavin webpage Admavin webpage Admavin webpage Admavin webpage
+          </div>
+        </div>
+      </div> -->
+    <marquee class="scrolling-container overflow-hidden mt-5">
+      <div class="scrolling-inner d-flex" style="--marquee-speed: 10s; --direction: scroll-left" role="marquee">
+        <div class="d-flex">
+          <img class="scrolling-item" src="../../assets/images/company_logos/netcore.png" alt="Netcore" />
+          <img class="scrolling-item" src="../../assets/images/company_logos/fourkites.png" alt="Fourkites" />
+          <img class="scrolling-item" src="../../assets/images/company_logos/auditoria.png" alt="Auditoria" />
+          <img class="scrolling-item" src="../../assets/images/company_logos/capillary.png" alt="Capillary" />
+          <img class="scrolling-item" src="../../assets/images/company_logos/netcore.png" alt="Netcore" />
+          <img class="scrolling-item" src="../../assets/images/company_logos/fourkites.png" alt="Fourkites" />
+          <img class="scrolling-item" src="../../assets/images/company_logos/auditoria.png" alt="Auditoria" />
+          <img class="scrolling-item" src="../../assets/images/company_logos/capillary.png" alt="Capillary" />
+        </div>
+      </div>
+    </marquee>
+  </section>
+
+  <!-- Planner Section -->
+  <section id="planner-section" class="py-5 text-white planner-bg">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <p class="title">Planner Categories</p>
+      <div class="planner d-flex justify-content-center w-100 py-5 mt-4 gap-0 gap-sm-4">
+        <div class="row w-100">
+          <div class="col-sm-4">
+            <div class="card border-0 bg-transparent text-white">
+              <img class="card-img-top" src="../../assets/images/planner/plannerCard1.png" alt="Planner Card Image 1" />
+              <div class="card-body px-0">
+
+                <a class="card-title text-decoration-none" href="../pages/offerings/campaign-planner.html">Campaign
+                  Planner</a>
+                <p class="card-text">Plan and manage End-To-End Out Of Home (OOH) Media Advertising Campaigns</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-0 bg-transparent text-white">
+              <img class="card-img-top " src="../../assets/images/planner/plannerCard2.png"
+                alt="Planner Card Image 1" />
+              <div class="card-body px-0">
+                <a class="card-title text-decoration-none" href="../pages/offerings/campaign-analyser.html">Campaign
+                  Analyzer</a>
+                <p class="card-text">Plan and manage End-To-End Out Of Home (OOH) Media Advertising Campaigns</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-0 bg-transparent text-white">
+              <img class="card-img-top" src="../../assets/images/planner/plannerCard3.png" alt="Planner Card Image 1" />
+              <div class="card-body px-0">
+                <a class="card-title text-decoration-none" href="../pages/offerings/campaign-monitoring.html">Campaign
+                  Monitoring</a>
+                <p class="card-text">Plan and manage End-To-End Out Of Home (OOH) Media Advertising Campaigns</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="planner-next d-none d-md-flex justify-content-center align-items-center">
+          <img src="../../assets/images/planner/rightVector.png" alt="Right Vector Image" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Case Study -->
+  <section id="planner-section" class="py-3 text-white planner-bg">
+    <div class="page-content text-white">
+      <h1 class="text-center">
+        Case Study On <span class="text-secondary">OOH</span> Campaigns
+      </h1>
+      <p class="text-center"> Our Core Belief Systems And Values Form The Foundation Of Our Country.<br>It Is What
+        Drives
+        Every Decision We Make, Every Step Of The Way.</p>
+      <section id="planner-section" class="py-5 text-white planner-bg">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+
+          <div class="planner d-flex justify-content-center w-100 py-5 mt-4 gap-0 gap-sm-4">
+            <div class="row w-100">
+              <div class="col-sm-4">
+                <div class="card border-0 bg-transparent text-white">
+                  <img class="card-img-top" src="../assets/johnjacobs.png" alt="Planner Card Image 1" />
+                  <div class="card-body px-0">
+
+                    <a class="card-title text-decoration-none"
+                      href="../pages/case-studies/john-jacobs-eyewear.html">Customer
+                      Happiness</a>
+                    <p class="card-text">Make A Positive Support To The Businesses<br>We Support Speeds</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card border-0 bg-transparent text-white">
+                  <img class="card-img-top " src="../assets/YLG.png" alt="Planner Card Image 1" />
+                  <div class="card-body px-0">
+                    <a class="card-title text-decoration-none"
+                      href="../pages/case-studies/you-look-great-saloon.html">Customer
+                      Happiness</a>
+                    <p class="card-text">Make A Positive Support To The Businesses<br>We Support Speeds</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card border-0 bg-transparent text-white">
+                  <img class="card-img-top" src="../assets/Queen.png" alt="Planner Card Image 1" />
+                  <div class="card-body px-0">
+                    <a class="card-title text-decoration-none"
+                      href="../pages/case-studies/covid-impressions-methodology.html">Customer
+                      Happiness</a>
+                    <p class="card-text">Make A Positive Support To The Businesses<br>We Support Speeds</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- News -->
+  <div class="page-content bg-primary text-white">
+    <h1 class="text-center">
+      News On <span class="text-secondary">OOH</span> Advertisement
+    </h1>
+    <p class="text-center">
+      Stories of emerging OOH Practices around the world
+    </p>
+    <div class="row">
+      <div class="col-md-6 py-2">
+        <img src="../assets/news/Bata_Pioneering_3d_Campaign.png" class="w-100 border border-white" alt="" />
+        <h3 class="text-truncate-2 pt-2">
+          Maxamtech Digital Ventures and Lemma Team up to Bring 'Metaverse'
+          Advertising to the Forefront of DOOH
+        </h3>
+        <p class="pt-2">
+          Lemma, a leading supply-side platform for large format ads, has
+          announced its collaboration with Maxamtech Digital Ventures to
+          launch metaverse billboards in the real world for DOOH clients.
+          Brands can now create a dual experience for spectators in both the
+          virtual and actual worlds through Lemma, resulting in dual impact.
+          The partnership between Lemma and Maxamtech will assist global
+          brands in creating brand impressions on untapped audiences through
+          virtual media in the Metaverse. Billboard advertising in the
+          Metaverse is currently relatively affordable, making it a
+          potentially lucrative opportunity to target new audiences entering
+          the Metaverse.
+        </p>
+        <button class="btn btn-outline-light">Read More</button>
+      </div>
+      <div class="col-md-6 overflow-y-auto py-2" style="height: 80vh">
+        <div class="d-flex align-iems-cente py-2">
+          <img src="../assets/news/Bata_Pioneering_3d_Campaign.png" class="w-25 border border-white" alt="" />
+          <div class="p-2">
+            <h4 class="text-truncate-2 ">
+              <a class="text-decoration-none text-white" href="../pages/news/bata-pioneering-campain.html"> Bata
+                Pioneering 3D
+                Campaign In India</a>
+            </h4>
+            <p class="text-truncate-2">
+              Bata India came up with a 3D OOH billboard that utilizes an
+              anamorphic image content creation format thereby making content
+              appear in 3 dimensions, which are visually compelling. Bata has
+              used this innovative OOH technology to highlight the variety of
+              sneakers it offers with the Sneaker Studios launched across 300+
+              stores across the country.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex align-iems-cente py-2">
+          <img src="../assets/news/Kirloskar_Limitless_Dooh.png" class="w-25 border border-white" alt="" />
+          <div class="p-2">
+            <h4 class="text-truncate-2">
+              <a class="text-decoration-none text-white" href="../pages/news/kirloskar-limitless-dooh.html"> Kirloskar
+                ‘Limitless’ DOOH Campaign Shining Mumbai Airport</a>
+            </h4>
+            <p class="text-truncate-2">
+              A 130-year-old industry leader, Kirloskar refreshes its campaign
+              with a new age Digital OOH at the Mumbai Airport in partnership
+              with Times OOH.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex align-iems-cente py-2">
+          <img src="../assets/news/Bata_Pioneering_3d_Campaign.png" class="w-25 border border-white" alt="" />
+          <div class="p-2">
+            <h4 class="text-truncate-2">
+              <a class="text-decoration-none text-white" href="../pages/news/maxamtech-lemma-metaverse-advertsing.html">
+                Maxamtech
+                Digital Ventures and Lemma team up to bring
+                'metaverse' advertising to the forefront of DOOH </a>
+            </h4>
+            <p class="text-truncate-2">
+              Lemma, a leading supply-side platform for large format ads, has
+              announced its collaboration with Maxamtech Digital Ventures to
+              launch metaverse billboards in the real world for DOOH clients.
+              Brands can now create a dual experience for spectators in both
+              the virtual and actual worlds through Lemma, resulting in dual
+              impact.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex align-iems-cente py-2">
+          <img src="../assets/news/New_Ideas_OOH_Kashmir_To_Kerala.png" class="w-25 border border-white" alt="" />
+          <div class="p-2">
+            <h4 class="text-truncate-2">
+              <a class="text-decoration-none text-white" href="../pages/news/floating-ooh.html">
+                From Kashmir TO Kerala - Emergence Of Floating OOH And audience </a>
+
+            </h4>
+            <p class="text-truncate-2">
+              Honda launched first of its type floating Out of Home
+              Advertisement (OOH) in famous Kerala backwaters which caught
+              eyeballs of brands and media agencies across the world. Tourists
+              who visited there for the fun of backwaters also enjoyed this
+              new version of marketing.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex align-iems-cente py-2">
+          <img src="../assets/news/times-ooh-airport.png" class="w-25 border border-white" alt="" />
+          <div class="p-2">
+            <h4 class="text-truncate-2">
+              <a class="text-decoration-none text-white" href="../pages/news/times-ooh.html">
+                Times OOh Wins A Rights For GMR Goa International Airport, Mopa</a>
+
+            </h4>
+            <p class="text-truncate-2">
+              Times Innovative Media Limited (Times OOH) has secured the
+              advertising rights for Manohar International Airport, a
+              greenfield airport at Mopa in North Goa, for a period of 20
+              years. Developed by GMR group, the Mopa airport is a
+              full-service airport designed to cater to domestic and
+              international passengers and freight services, with a target
+              passenger capacity of 13 million travelers per annum.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex align-iems-cente py-2">
+          <img src="../assets/news/delhi-mumbai-expressway.png" class="w-25 border border-white" alt="" />
+          <div class="p-2">
+            <h4 class="text-truncate-2">
+              <a class="text-decoration-none text-white" href="../pages/news/delhi-mumbai-expressway-ooh.html">
+                Rev Up Your Brand's Exposure with the High-Speed Delhi-Mumbai
+                Expressway OOH Route!</a>
+
+            </h4>
+            <p class="text-truncate-2">
+              The Delhi-Mumbai expressway, hailed as India's monumental
+              infrastructure project, has put the OOH sector into high gear.
+              As India's longest expressway, spanning 1,386 kilometers, it has
+              significantly reduced travel time between Mumbai and Delhi to
+              only 12 hours, down from nearly 24 hours. The expressway's
+              completion is anticipated by January 2024, with progress being
+              made on multiple routes. Recently, PM Narendra Modi inaugurated
+              the Sohna to Dausa stretch, which is expected to cut the
+              distance between Gurgaon and Jaipur by two hours.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex align-iems-cente py-2">
+          <img src="../assets/news/New_Ideas_OOH_2023.png" class="w-25 border border-white" alt="" />
+          <div class="p-2">
+            <h4 class="text-truncate-2">
+              <a class="text-decoration-none text-white" href="../pages/news/best-marketing-ideas.html">
+                Best Marketing Ideas In OOH Campaign 2023</a>
+
+            </h4>
+            <p class="text-truncate-2">
+              Average time span for human attention is just 8 seconds. If your
+              Out of Home (OOH) media is unable to engage consumers within
+              this time frame, then your marketing idea is nothing but just a
+              resource burning tool. Here are top emerging ideas in 2023 to
+              save you from wasting your resources.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex align-iems-cente py-2">
+          <img src="../assets/news/Bumble_Billboards_Kolkata_Hyderabad.png" class="w-25 border border-white" alt="" />
+          <div class="p-2">
+            <h4 class="text-truncate-2">
+              <a class="text-decoration-none text-white" href="../pages/news/bumble-gupshups.html">
+                Bumble Is Making Gupshups In Streets Of Kolkata</a>
+
+
+            </h4>
+            <p class="text-truncate-2">
+              Bumble, the women-first dating and social networking app,
+              launched its new out-of-home campaign that captures nuanced
+              dating cultures in cities including Kolkata and Ahmedabad. Ahead
+              of the festival season, Bumble’s latest OOH campaign aims to
+              support the community to navigate their dating journeys and
+              encourage women to make the first move for initiating the
+              conversion.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex align-iems-cente py-2">
+          <img src="../assets/news/Programmatic_Direct_Out_of_Home_AdMAVIN_Audience_Measurement.png"
+            class="w-25 border border-white" alt="" />
+          <div class="p-2">
+            <h4 class="text-truncate-2">
+              <a class="text-decoration-none text-white" href="../pages/news/pdooh.html">
+                Era Of PDOOH And Audience Measurement</a>
+
+            </h4>
+            <p class="text-truncate-2">
+              You must have seen several advertisements which vary with time
+              on the same day. For example, you might see a BMW Ad during
+              office hours and Horlicks Ad soon after school hours on the same
+              screen. Programmatic Digital Out-Of-Home (pDOOH) allows you to
+              choose to play different advertisements on the same screen as
+              per your strategy to target audience.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex align-iems-cente py-2">
+          <img src="../assets/news/media-selection/city.png" class="w-25 border border-white" alt="" />
+          <div class="p-2">
+            <h4 class="text-truncate-2">
+              <a class="text-decoration-none text-white" href="../pages/news/media-selection.html">
+                Media Selection - Factors To Keep In Mind While Selecting Media
+                Site Type</a>
+            </h4>
+            <p class="text-truncate-2">
+              It's very often that Brands and even Media-Agencies get confused
+              while selecting out of home media sites for campaigns as they
+              are very much similar.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex align-iems-cente py-2">
+          <img src="../assets/news/Memevertisement_Creative_Billboards_Ideas.png" class="w-25 border border-white"
+            alt="" />
+          <div class="p-2">
+            <h4 class="text-truncate-2">
+              <a class="text-decoration-none text-white" href="../pages/news/memevertisement.html">
+                Memevertisement - Epitome Of Creative billboards</a>
+
+            </h4>
+            <p class="text-truncate-2">
+              Pepperfry launched its meme based advertisements recently under
+              the title- ‘MemeSuperstars’. Campaign was executed across
+              eight-plus cities and in more than 250+ media to drive
+              talkability. It has enabled the brand to inform, attract &
+              engage with its audience through the campaign. To generate
+              maximum impact, it targeted locations such as arterial routes,
+              corporate areas, market areas, and competition brand locations
+              to reach out to the brand’s core target group.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Why Choose ADMAVIN -->
+  <div class="why-admavin-section page-content bg-primary text-white">
+    <h1 class="text-center mb-3">
+      Why Choose <span class="text-secondary">ADMAVIN ?</span>
+    </h1>
+
+    <div class="row why-admavin-content" style="height: 500px">
+      <div class="col-sm-12 col-md-7">
+        <div class="d-flex h-100 w-100 spacing">
+          <div class="bg-secondary w-2"></div>
+          <div class="d-flex flex-column h-100 w-100 justify-content-between" id="messageDiv">
+            <h1 id="messageHeading" class="py-3 ps-5"></h1>
+            <p id="messageText" class="text-justify ps-5 fs-2"></p>
+            <div class="d-fex flex-wrap ps-5">
+              <button class="showMsgButton mt-2" onclick="showMessage(this, 1)">
+                1
+              </button>
+              <button class="showMsgButton mt-2" onclick="showMessage(this,2)">
+                2
+              </button>
+              <button class="showMsgButton mt-2" onclick="showMessage(this,3)">
+                3
+              </button>
+              <button class="showMsgButton mt-2" onclick="showMessage(this,4)">
+                4
+              </button>
+              <button class="showMsgButton mt-2" onclick="showMessage(this,5)">
+                5
+              </button>
+              <button class="showMsgButton mt-2" onclick="showMessage(this,6)">
+                6
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 d-none d-md-block">
+        <image src="../assets/why-admavin.png" class="mw-100 why-admavin-image" />
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      showMessage(document.querySelector(".showMsgButton"), 1);
+    });
+  </script>
+
+  <!-- Meet the team -->
+  <div class="page-content bg-primary text-white text-justify">
+    <div class="d-flex justify-content-around flex-column-reverse flex-md-row mb-3">
+      <div class="our-team-section row">
+        <img src="../assets/image1.png " alt="" class="col-6 col-md-4 team-image1 mb-3" />
+        <div class="col-6 col-md-4 mb-3">
+          <img src="../assets/image1.png" alt="" class="d-block w-100 team-image2" />
+          <img src="../assets/image1.png" alt="" class="d-block w-100 team-image2 mt-3" />
+        </div>
+        <img src="../assets/image1.png" alt="" class="col-sm-12 col-md-4 team-image1 mb-3" />
+      </div>
+      <div class="ms-3 our-team-section">
+        <h1>Meet <span class="text-secondary">Our Team</span></h1>
+        <p class="our-team-font">
+          We strongly believe in Nurturing talent. Anybody who is willing to
+          put in the effort to learn and grow is welcome aboard. Combined with
+          smarts, the energy and enthusiasm our people fill the workplace with
+          their mere presence is infectious. We feel blessed to have a
+          diversely talented, enthusiastic and young team with the right mix
+          of eagerness and experience that fills us with the belief that no
+          task is impossible!
+        </p>
+      </div>
+    </div>
+
+    <div class="d-flex">
+      <div class="our-team-section row">
+        <img src="../assets/image1.png " alt="" class="col-sm-6 col-md-4 team-image1 mb-3" />
+        <img src="../assets/image1.png " alt="" class="col-sm-6 col-md-4 team-image1 mb-3" />
+        <img src="../assets/image1.png " alt="" class="col-sm-12 col-md-4 team-image1 mb-3" />
+      </div>
+      <div class="our-team-section row ms-3">
+        <img src="../assets/image1.png " alt="" class="col-sm-6 col-md-4 team-image1 mb-3" />
+        <div class="col-sm-6 col-md-4 mb-3">
+          <img src="../assets/image1.png" alt="" class="d-block w-100 team-image2" />
+          <img src="../assets/image1.png" alt="" class="d-block w-100 team-image2 mt-3" />
+        </div>
+        <img src="../assets/image1.png" alt="" class="col-sm-12 col-md-4 team-image1 mb-3" />
+      </div>
+    </div>
+  </div>
+  <!-- Our Culture Drives What To Do -->
+  <div class="page-content text-white bg-primary">
+    <div class="text-center">
+      <h1 class="title text-center fw-bold">
+        <span class="text-success">Our Culture</span> drives,<br />
+        what we do!
+      </h1>
+
+      <p>Our core belief systems and values form the foundation of our company. <br>
+        It is what drives every decision we make, every step of the way.</p>
+
+    </div>
+    <br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 text-md-end">
+          <h4><img src="../assets/tie.png" alt="Overlay Image">Customer Happiness</h4>
+          <p>Make a positive difference to the businesses we support</p>
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+          <h4><img src="../assets/tie.png" alt="Overlay Image">Speed</h4>
+          <p>Do today, what we could do tomorrow</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 text-md-end">
+          <h4><img src="../assets/tie.png" alt="Overlay Image">Empathy</h4>
+          <p>Keep customer first by putting ourselves in their shoes</p>
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+          <h4><img src="../assets/tie.png" alt="Overlay Image">Innovation</h4>
+          <p>Reform old industry standards and find better ways to do it</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 text-md-end">
+          <h4><img src="../assets/tie.png" alt="Overlay Image">Integrity</h4>
+          <p>Maintain transparency in our processes and commitments</p>
+        </div>
+        <!-- <div class="col ">
+
+
+          <img src="../assets/Image.png" alt="Overlay Image">
+
+        </div> -->
+        <div class="col-md-6 col-sm-12">
+
+          <h4><img src="../../assets/tie.png" alt="Overlay Image">Efficiency & Excellence</h4>
+          <p>
+            Find quick and smart solutions to meet our goals and with every
+            milestone, aim higher and strive to achieve it
+          </p>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-6 col-sm-12 text-md-end">
+          <h4><img src="../assets/tie.png" alt="Overlay Image">Relentlessness</h4>
+          <p>Set ambitious targets and work hard towards achieving them</p>
+        </div>
+        <!-- <div class="col ">
+
+
+          <img src="../assets/Image.png" alt="Overlay Image">
+
+        </div> -->
+        <div class="col-md-6 col-sm-12">
+          <h4><img src="../assets/tie.png" alt="Overlay Image">Openness</h4>
+          <p>Do it like it should be done, tell it as it should be told</p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-content bg-primary">
+      <img class="my-5" src="../assets/logo-primary.png" alt="admavin-logo" />
+
+      <div class="row">
+        <div class="col-md-4 col-sm-12 mb-5">
+          <h4 class="text-white">DO REACH US ON</h4>
+
+          <!-- Social Platform Links -->
+          <div class="d-flex mb-3">
+            <a href="https://www.linkedin.com/company/admavin/" target="_blank">
+              <img src="../assets/ri-linkedin-box-fill.png" alt="linkedIn" class="pr-1" />
+            </a>
+            <a href="https://www.youtube.com/@admavin" target="_blank">
+              <img src="../assets/ri-youtube-fill.png" alt="youtube" class="px-1" />
+            </a>
+            <a href="https://www.facebook.com/admavin" target="_blank">
+              <img src="../assets/ri-facebook-circle-fill.png" alt="facebook" class="px-1" />
+            </a>
+            <a href="https://twitter.com/ad_mavin?lang=en" target="_blank">
+              <img src="../assets/ri-twitter-fill.png" alt="twitter" />
+            </a>
+          </div>
+
+          <a href="#" target="_blank" class="text-secondary">
+            <h6 class="fw-bold">CLICK HERE TO SCHEDULE A MEETING</h6>
+          </a>
+
+          <h4 class="text-white my-3">Contact Us</h4>
+
+          <!-- Phone -->
+          <div class="d-flex">
+            <div>
+              <img src="../assets/ri-phone-fill.png" />
+            </div>
+
+            <p class="text-white ms-3">+91 - 7824881798 / +91 - 8454807529</p>
+          </div>
+
+          <!-- Email -->
+          <div class="d-flex">
+            <div>
+              <img src="../assets/ri-mail-send-fill.png" />
+            </div>
+            <div class="ms-3">
+              <p class="text-white mb-0">contact@admavin.com</p>
+              <p class="text-white">sailesh@admavin.com</p>
+            </div>
+          </div>
+
+          <!-- ADDRESS  -->
+          <div class="text-white d-flex">
+            <div>
+              <img src="../assets/ri-user-location-fill.png" />
+            </div>
+            <div class="ms-3">
+              <p class="mb-0">ADMAVIN C/o MANDARK TECHNOLOGIES,</p>
+              <p class="mb-0">D-307, IITM Research Park,</p>
+              <p class="mb-0">Kanagam Road, Tharamani.</p>
+              <p class="mb-0">Chennai - 600018</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-sm-12 text-white">
+          <h3 class="mb-5">Revolutionizing OOH Advertizing Technologies</h3>
+          <p>
+            AdMAVIN is a multi disciplinary team of data scientists, developers
+            and marketing experts, whose passion for Geo-Spatial Analytics led
+            us to build this platform for the OOH media industry in 2016.
+          </p>
+
+          <p>
+            Gowri Shankar, Sailesh and Aviral Roy, our co-founders with over 10+
+            years of experience in Software development, Product (Project)
+            Management, Business Development and Operations experience, are
+            Alumni from IIT Madras and IIM Ahmedabad and our tech team boasts of
+            highly qualified Product designers and developers with the essential
+            educational background and a winning attitude.
+          </p>
+
+          <p class="pb-5">
+            Our mentors are professors from Premier Educational institutions and
+            media industry insiders with over 35 years of experience in the
+            changing market environment.
+          </p>
+          <div class="row pt-5">
+            <p class="col-md-4 col-sm-12">
+              <a href="#" class="text-secondary">Careers at Admavin</a>
+            </p>
+            <p class="col-md-4 col-sm-12">
+              <a href="#" class="text-secondary">Terms</a>
+            </p>
+            <p class="col-md-4 col-sm-12">
+              <a href="#" class="text-secondary">Privacy</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="C:\Users\yaazh\website-redesign\pages\ourTeam.html"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
