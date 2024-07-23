@@ -73,10 +73,7 @@
   margin: 10px 0px;
 }
 
-.why-admavin-section {
-  height: 100vh;
-  overflow: auto;
-}
+
 
 .showMsgButton {
   border: 4px solid gray;
@@ -94,20 +91,15 @@
   padding-bottom: 40px;
 }
 
-.why-admavin-content {
-  height: 500px;
-}
 
-.why-admavin-image {
-  height: 600px;
-}
+
 
 .team-image1 {
-  height: 400px;
+  height: 340px;
 }
 
 .team-image2 {
-  height: 193px;
+  height: 162px;
 }
 
 .our-team-section {
@@ -115,7 +107,7 @@
 }
 
 .our-team-font {
-  font-size: 28px;
+  font-size: 20px;
 }
 
 .steps12-image {
@@ -160,11 +152,12 @@
   .our-team-section {
     width: 100%;
   }
+  
 }
 
-@media screen and (min-width: 768px) and (max-width: 1170px) {
+@media screen and (min-width: 768px) and (max-width: 1330px) {
   .our-team-font {
-    font-size: 20px;
+    /* font-size: 15px; */
   }
 
   .team-image1 {
@@ -172,15 +165,11 @@
   }
 
   .team-image2 {
-    height: 193px;
+    height: 140px;
   }
 }
 
-@media screen and (min-width: 1170px) and (max-width: 1500px) {
-  .our-team-font {
-    font-size: 24px;
-  }
-}
+
 
 /* Common Style */
 .bg-color {
@@ -226,77 +215,7 @@ nav ul li a {
   color: white;
 }
 
-/* Home Style */
-#home-section {
-  background-image: url("./assets/images/home_bg_image.png");
-  background-color: #000a08 !important;
-}
 
-.title span {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-  color: #0db59b;
-}
-
-.home-subtitle {
-  font-size: 20px;
-  font-weight: 200;
-}
-
-.home-map {
-  border: 3px solid white;
-  border-radius: 10px;
-  background-color: white;
-  opacity: 30%;
-}
-
-#scrolling-section p {
-  font-family: "Kanit", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  letter-spacing: 3px;
-}
-
-#scrolling-section p span {
-  font-size: 30px;
-}
-
-.scrolling-inner {
-  white-space: nowrap;
-}
-
-.scrolling-item {
-  padding: 0px 100px;
-}
-
-.scrolling-inner > div {
-  animation: var(--direction) var(--marquee-speed) linear infinite;
-}
-
-.scrolling-container:hover .scrolling-inner > div {
-  animation-play-state: paused;
-}
-
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-@keyframes scroll-right {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-.planner-next {
-  background-color: rgba(13, 181, 155, 0.168627451);
-  width: 100px;
-}
 
 
 
@@ -339,7 +258,7 @@ nav ul li a {
   background-color: #000a08 !important;
 }
 
-.title span {
+.text-border{
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   color: #0db59b;
@@ -357,15 +276,8 @@ nav ul li a {
   opacity: 30%;
 }
 
-#scrolling-section p {
-  font-family: "Kanit", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  letter-spacing: 3px;
-}
-
-#scrolling-section p span {
-  font-size: 30px;
+#scrolling-section{
+  background-color: white !important;;
 }
 
 .scrolling-inner {
@@ -404,3 +316,91 @@ nav ul li a {
   background-color: rgba(13, 181, 155, 0.168627451);
   width: 100px;
 }
+
+/* Main heading  */
+.main-heading{
+  font-size: 56px;
+}
+
+
+.awarad-image{
+  margin: 0 22px;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .flex-container{
+    display: flex;
+    align-items: start;
+  }
+
+}
+
+
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+/* Small devices (landscape phones, 576px and down) */
+@media (max-width: 576px) {
+  #home-section {
+    margin-top: 50px;
+    padding: 30px;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .navbar {
+    padding: 20px 50px;
+  }
+  #home-section {
+    margin-top: 90px;
+    padding: 30px;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar {
+    min-height: 100px;
+    padding: 30px 50px;
+  }
+  #home-section {
+    margin-top: 110px;
+  }
+  #planner-section {
+    padding: 50px;
+  }
+}
+
+/* Large devices (desktops, 992px and down) */
+@media (max-width: 992px) {
+  #home-section {
+    background-image: none !important;
+  }
+  .home-map {
+    height: 300px !important;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .home-inner,
+  .home-map {
+    height: 100% !important;
+  }
+  #home-section {
+    height: 600px;
+  }
+}
+
+
+/* main heading */
+
+
+@media (max-width: 576px) {
+  .main-heading{
+    font-size: 25px;
+  }
+}
+
+
+
