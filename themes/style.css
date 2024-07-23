@@ -403,4 +403,18 @@ nav ul li a {
 }
 
 
+/* Campaign Analyzer */
+
+.progress-bar-img{
+  width:120px;
+  height: 120px;
+}
+.custom-box{
+  background-color: #03362E;
+  color:white;
+  text-align:center;
+  padding: 20px ;
+}
+
+
 
